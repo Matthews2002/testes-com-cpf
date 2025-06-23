@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title> CPF </title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Gerador e Validador de CPF</h1>
+        </header>
+        <main>
+            <section id="choices">
+                <form id="options">
+                    <button type="submit" class="btn-opt" value="#gerar-dialog">Gerar CPF</button>
+                    <button type="submit" class="btn-opt" value="#validar-dialog">Validar CPF</button>
+                </form>
+            </section>
+
+            <section class="modal-default" id="gerar-dialog">
+                <div class="dialog-content">
+                    <form id="gerar-cpf">
+                        <button type="submit">Gerar</button>
+                    </form>
+                    <span class="result gen">111.222.333-96</span>
+                </div>
+            </section>
+            <section class="modal-default" id="validar-dialog">
+                <div class="dialog-content">
+                    <form id="validar-cpf">
+                        <div class="input-field">
+                            <label for="cpf">CPF</label>
+                            <input type="text" name="cpf" id="cpf" minlength="11" maxlength="14" required>
+                        </div>
+                        <span class="result"></span>
+                        <button>Validar CPF</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Criado por &copy; Matthews - 2025</p>
+        </footer>
+        <script src="javascript/index.js"></script>
+        <script src="javascript/script.js"></script>
+    </body>
+</html>
